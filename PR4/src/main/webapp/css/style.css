@@ -1,0 +1,276 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --blog-color: #968896;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+.currentMenu {
+    border-bottom: 3px solid var(--caption-color);
+}
+
+.user_profile {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.user_profile .username {
+    font-size: 1.5rem;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+.user_profile img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.other_users a {
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.other_users .inactive {
+    color: var(--border-color);
+}
+
+.bold_nf {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.middle .posts_line {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: rotate(180deg);
+}
+
+.posts_line > li {
+    transform: rotate(-180deg);
+}
+
+.article {
+    margin-bottom: 2rem;
+}
+
+.article .title {
+    color: var(--caption-color);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.article .information {
+    color: var(--blog-color);
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.article .body {
+    border-left: 4px solid var(--border-color);
+    padding-left: 0.5rem;
+}
+
+.article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    height: 2rem;
+}
+
+.article .footer .left {
+    position: relative;
+    left: 8px;
+    height: 100%;
+}
+
+.article .footer .left img {
+    position: relative;
+    top: 4px;
+}
+
+.article .footer .left .positive-score {
+    color: #008000;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.article .footer .right {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.undecorated_handle {
+    text-decoration: none;
+}
+
+.cf_handle{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.datatable table th {
+    padding: 4px 4px;
+}
+
+.datatable table td {
+    padding: 4px 0;
+    font-size: 0.85rem;
+}
+
+.datatable table thead tr th {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.datatable table tbody tr:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datatable table tbody tr td {
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.caption {
+    font-family: Verdana, sans-serif;
+    padding: 4px 0 4px 6px;
+    vertical-align: middle;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: #f4f4f4;
+}
